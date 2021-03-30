@@ -1,0 +1,14 @@
+
+#create an output for Asg_1
+output: Asg_1.o 
+	g++ Asg_1.o -o output
+
+#compile Asg_1.cpp
+Asg_1.o: Asg_1.cpp
+	g++ -c Asg_1.cpp
+	g++ -c version.cpp
+
+#clear 	everything
+clean:
+	rm *.o output
+	
